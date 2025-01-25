@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background: blanchedalmond; */
+}
+.container1{
+    max-width: 1440px;
+    width: 100%;
+    justify-self: center;
+    background: var(--pink-ternary);
+}
+p ,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,ul{
+    margin-bottom: 0;
+    /* padding: 0; */
+}
+ul{
+    padding-left: 1.5rem;
+}
+@font-face{
+    font-family: Adobe Caslon Pro;
+    src: url(./font/Adobe\ Caslon\ Pro.otf); 
+}
+.adobe{
+    font-family: Adobe Caslon Pro;
+}
+/* color */
+:root {
+    --primary-color: #3498db; /* Blue */
+    --secondary-color: #2ecc71; /* Green */
+    --pink-primary: #E1BBB4; /* Light Gray */
+    --pink-ternary: #F0ECE7; /* Light Gray */
+    --grey-primary: #777777; /* Dark Gray */
+    --grey-secondary: #D7D2CB; /* Dark Gray */
+  }
+.Ratings ,.eighty, .grey1{
+    color: var(--grey-primary);
+}
+.icon{
+    background-color: var(--pink-ternary);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: anchor-center;
+}
+.heart {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background-color: transparent;
+}
+.cart{
+    padding: 10px 15px;
+    max-width: 992px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.cart1{
+    max-width: 962px;
+    width: 100%;
+    padding: 14px 0;
+}
+
+.fs-18{
+    font-size: 18px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.star{
+    height: 13px;
+    width: 14px;
+}
+.d-arrow{
+    height: 16px;
+    width: 16px;
+}
+.hand{
+    max-width: 992px;
+    width: 100%;
+    /* max-height: 232px; */
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  .container {
+    position: relative;
+    /* width: 100%; */
+    /* max-width: 400px; */
+    /* margin: auto; */
+  }
+ 
+
+  .custom-radio input[type="radio"] {
+    display: none;
+  }
+  .custom-radio1 input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Create a custom circle */
+  .custom-radio  label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    display: inline-block;
+    line-height: 20px;
+  }
+  .custom-radio1 label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    display: inline-block;
+    line-height: 20px;
+  }
+
+  .custom-radio label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--grey-secondary); /* Custom border color */
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .custom-radio1 label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--grey-secondary); /* Custom border color */
+    border-radius: 25%;
+    background-color: #fff;
+  }
+
+  /* Checked state: fill the circle with pink */
+  .custom-radio input[type="radio"]:checked + label::before {
+    background-color: #fff; /* Pink fill color */
+  }
+  .custom-radio1 input[type="checkbox"]:checked + label::before {
+    /* background-color: #fff;  */
+    content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--pink-primary); /* Pink border */
+      border-radius: 4px; /* Rounded corners for checkbox */
+      background-color: #fff; /* White background */
+      transition: all 0.3s ease; /* Smooth transition */
+  }
+
+  /* Add the inner dot for checked state */
+  .custom-radio input[type="radio"]:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 2%;
+    top: 9.5%;
+    width: 12px;
+    height: 12px;
+    background-color: var(--pink-primary); /* Slightly darker pink for the dot */
+    border-radius: 50%;
+  }
+  .custom-radio1 input[type="checkbox"]:checked + label::after {
+    content: '✔'; /* Unicode for tick */
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    color: black; /* Black tick */
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .custom-radio1 input[type="checkbox"]:checked + label::before {
+  background-color: var(--pink-primary); /* Pink background */
+      border-color: var(--pink-primary); /* Pink border */
+  }
+
+  .image-container {
+    position: relative;
+    max-width: 992px; /* Restrict container width */
+}
+.image-container img {
+    /* max-width: 992px;
+    max-height: 232px;
+    width: 100%;
+    height: auto; */
+    width: 100%;
+    max-width: 992px; /* Restrict image width */
+    max-height: 232px; /* Restrict image height */
+    object-fit: cover; 
+}
+.top-bar {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+.top-bar1 {
+    position: absolute;
+    top: 57px;
+    left: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+.icons1 {
+    position: absolute;
+    top: 57px;
+    right: 15px;
+    display: flex;
+    gap: 15px;
+}
+.icons {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    display: flex;
+    gap: 6px;
+}
+.icons i {
+    font-size: 14px;
+    color: #6c757d;
+}
+.progress-bar {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    width: 90%;
+    background-color: #dee2e6;
+    height: 3px;
+    border-radius: 2px;
+}
+.progress {
+    background-color: #6c757d;
+    height: 100%;
+    width: 50%; /* Adjust as needed */
+}
