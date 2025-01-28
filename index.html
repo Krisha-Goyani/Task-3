@@ -12,9 +12,10 @@
 </head>
 <body>
   <header class=" sticky-top bg-white">
-    <div class="container1  d-sm-none xs-d-none d-md-block flex-col ">
-        <div  class="container1 d-flex justify-content-between items-center logo">
-          <div class="pointer d-flex md-gap-45">
+    <div class="d-sm-none xs-d-none d-md-block flex-col ">
+        <!--main-nav-->
+      <div class="container1 d-flex justify-content-between items-center logo">
+          <div class="xl-d-none pointer xxl-d-flex md-gap-45">
             <div class="xs-d-flex align-items-center gap-1">
               <p class="fs-14 adobe align-self-end">English </p>
               <img class="down-arrow" src="./public/arrow-down.png" alt="arrow" title="arrow">
@@ -23,18 +24,23 @@
             <img src="./public/vuesax-bold-locationx 1.png" alt="notification" title="notification"><p class="fs-14 adobe align-self-end">Mataró,Barcelona</p> 
             <img class="down-arrow" src="./public/arrow-down.png" alt="arrow" title="arrow">
           </div>
-          </div>
-            <div>
-                <img src="./public/Frame 950547582.png" title="logo" alt="logo">
-            </div>
-            <div class="pointer xs-d-flex gap-5">
-              <img src="./public/search-normal.png" title="profile" alt="profile">
-              <img src="./public/heart1.png" title="profile" alt="profile">
-              <img src="./public/notification.png" title="notification" alt="notification">
-              <img src="./public/profile-circle.png" title="profile" alt="profile">
-            </div>
         </div>
-        <div class="pointer container1 xs-d-flex fs-6 justify-content-center justify-content-between logo2 circularAirPro gap-4">
+        <div class="pointer xxl-d-none xl-d-flex xl-gap-1_5">
+          <img class="nav-icon" src="./public/profile-circle.png" title="profile" alt="profile">
+          <img class="nav-icon" src="./public/menu.png" title="profile" alt="profile">
+        </div>
+          <div>
+                <img src="./public/Frame 950547582.png" title="logo" alt="logo">
+          </div>
+          <div class="pointer xs-d-flex xl-gap-1_5">
+              <img class="nav-icon" src="./public/search-normal.png" title="profile" alt="profile">
+              <img class="xl-d-none nav-icon" src="./public/heart1.png" title="profile" alt="profile">
+              <img class="nav-icon" src="./public/notification.png" title="notification" alt="notification">
+              <img class="xl-d-none xxl-d-block nav-icon" src="./public/profile-circle.png" title="profile" alt="profile">
+          </div>
+      </div>
+      <!-- sub-nav -->
+        <div class="xl-d-none pointer container1 xs-d-flex fs-6 justify-content-center justify-content-between logo2 circularAirPro gap-4">
           <p>Nails</p>
           <p>Massages</p>
           <p>Speciality Massages</p>
@@ -47,17 +53,16 @@
           <p>Events</p>
           <p>About Us</p>
         </div>
+        
     </div>          
 </header>
 
-    <div class="container1">
-
+  <div class="container1">
       
-    <!-- Image -->
-        <div class="d-md-none  image-container">
+    <!-- Image-mobile -->
+    <div class="d-md-none  image-container">
         <!-- Image -->
         <img src="./public/Image 1.png" alt="Hand with ring">
-       
         <!-- Top bar -->
          <div class="xs-d-flex">
              <div class="top-bar">9.41</div>
@@ -75,40 +80,36 @@
                 <img src="./public/shopping-bag.png">
                 <img src="./public/Vector.png">
             </div>
-         </div>        
-    
+         </div>     
         <!-- Progress bar -->
         <div class="progress-bar1">
             <div class="progress1"></div>
         </div>
-        </div>
-        <div class="pointer xs-d-none d-md-block md-fs-14 adobe section align-content-center">
-          <p> Home > Nails > <span class="fw-bold"><u> Semi Permanant Manicure</u></span></p>
-        </div>
-  <div class="d-md-flex md-mx-65 bg-white gap-5">   
+    </div>
 
+    <div class="section pointer p-2 border border-0 rounded xs-d-none d-md-block md-fs-14 adobe  align-content-center">
+      <p> Home > Nails > <span class="fw-bold"><u> Semi Permanant Manicure</u></span></p>
+    </div>
+
+  <div class="d-md-flex md-mx-65 bg-white gap-5">   
     <!-- laptop img -->
     <div>
-      <div class="d-sm-none xs-d-none d-md-block main-img mb-3">
-        <div class="container-img">
-                <div class="wrapper">
-                    <img class="image" src="./public/Image 1.png">
-                    <img class="image" src="./public/Rectangle 30271 (1).png">
-                    <img class="image" src="./public/Image 2.png">
-                    <img class="image" src="./public/Image 1.png">
-                    <img class="image" src="./public/Rectangle 30271 (1).png">
-                </div>
-        </div>
-      </div>
-      <div class="d-sm-none xs-d-none d-md-block main-img-1 mt-3">
-        <div class="container-img-1 overflow-x-scroll whitespace-nowrap flex  gap-2 items-center no-scrollbar">
-          <div class="wrapper-1">
-            <img class="image" src="./public/Image 1-1.png">
+      <div class="d-sm-none xs-d-none d-md-block main-img mb-3 container-img">
+          <div class="wrapper">
+            <img class="image" src="./public/Image 1.png">
+            <img class="image" src="./public/Rectangle 30271 (1).png">
             <img class="image" src="./public/Image 2.png">
-            <img class="image" src="./public/Image 3.png">
-            <img class="image" src="./public/Image 4.png">
-            <img class="image" src="./public/Image 3.png">
-        </div>
+            <img class="image" src="./public/Image 1.png">
+            <img class="image" src="./public/Rectangle 30271 (1).png">
+          </div>
+      </div>
+      <div class="d-sm-none xs-d-none d-md-block main-img-1 mt-3 container-img-1 overflow-x-scroll whitespace-nowrap flex  gap-2 items-center no-scrollbar">
+          <div class="wrapper-1">
+            <img class="image1" src="./public/Image 1-1.png">
+            <img class="image1" src="./public/Image 2.png">
+            <img class="image1" src="./public/Image 3.png">
+            <img class="image1" src="./public/Image 4.png">
+            <img class="image1" src="./public/Image 3.png">
         </div>
       </div>
     </div>     
@@ -116,19 +117,19 @@
     <div>
       <!-- section-1 -->
       <div class="bg-white"> 
-      <div class="xs-d-flex justify-content-between xs-p-3 md-p-1">
+      <div class="xxl-d-flex justify-content-between xs-p-3 md-p-1">
           <div class="xs-d-flex flex-column gap-2">
               <p class="fs-18 fw-bold md-fs-25 circularAirPro">Semi-Permanent Manicure</p>
               <div class="xs-d-flex gap-2 align-items-baseline">
                   <img class="star" src="./public/star.png">
                   <div><p class="Ratings fs-sm-6 md-fs-18 align-items-center fw-normal adobe grey-primary">4.9 • 2060 Reviews</p></div>
               </div>
-              <div class="xs-d-flex gap-2 fs-sm-18">
+              <div class="xs-d-flex gap-2 fs-sm-18 no-wrap">
                   <p class="md-fs-20">&euro; 40.00</p>
                   <p class="eighty md-fs-20">&euro; 80.00</p>
               </div>
           </div>
-          <div class="d-md-flex gap-3">
+          <div class="d-md-flex xl-gap-2 xl-mt-2">
             <div class="pointer d-sm-none xs-d-none d-md-block d-md-flex icon border border-0 rounded-circle align-self-md-start">
                 <img class="heart" src="./public/share.png" alt="like" title="like">
             </div>
@@ -206,43 +207,43 @@
           </label>
         </div>
         <div>
-          <div class="extra md-pt xs-d-none d-md-flex flex-wrap gap-3">
-            <button class="button2 xs-d-flex flex-column border  adobe fs-6 justify-content-evenly">
+          <div class="extra1 md-pt xs-d-none d-md-flex flex-wrap gap-3">
+            <button class="button2 br-gray xs-d-flex flex-column adobe fs-6 justify-content-evenly">
               <span class="align-self-center">Design</span>
               <div class="align-self-center">
                 <span>&euro; 10.00</span>
                 <span><img style="vertical-align: top;" src="./public/clock.png"> 30 mins</span>
               </div>
             </button>
-            <button class="button2 border  xs-d-flex flex-column adobe fs-6 justify-content-evenly">
+            <button class="button2 xs-d-flex flex-column adobe fs-6 justify-content-evenly">
               <span class="align-self-center">Spa</span>
               <div class="align-self-center">
                 <span>&euro; 10.00</span>
                 <span><img style="vertical-align: top;" src="./public/clock.png"> 30 mins</span>
               </div>
             </button>
-            <button class="button2 border  xs-d-flex flex-column adobe fs-6 justify-content-evenly">
+            <button class="button2 xs-d-flex flex-column adobe fs-6 justify-content-evenly">
               <span class="align-self-center">Repair 1 Broken Nail</span>
               <div class="align-self-center">
                 <span>&euro; 10.00</span>
                 <span><img style="vertical-align: top;" src="./public/clock.png"> 30 mins</span>
               </div>
             </button>
-            <button class="button2 border  xs-d-flex flex-column adobe fs-6 justify-content-evenly">
+            <button class="button2 xs-d-flex flex-column adobe fs-6 justify-content-evenly">
               <span class="align-self-center">Spa</span>
               <div class="align-self-center">
                 <span>&euro; 10.00</span>
                 <span><img style="vertical-align: top;" src="./public/clock.png"> 30 mins</span>
               </div>
             </button>
-            <button class="button2 border xs-d-flex flex-column adobe fs-6 justify-content-evenly">
+            <button class="button2 xs-d-flex flex-column adobe fs-6 justify-content-evenly">
               <span class="align-self-center">Repair 1 Broken Nail</span>
               <div class="align-self-center">
                 <span>&euro; 10.00</span>
                 <span><img style="vertical-align: top;" src="./public/clock.png"> 30 mins</span>
               </div>
             </button>
-            <button class="button2 border xs-d-flex flex-column adobe fs-6 justify-content-evenly">
+            <button class="button2 xs-d-flex flex-column adobe fs-6 justify-content-evenly">
               <span class="align-self-center">Design</span>
               <div class="align-self-center">
                 <span>&euro; 10.00</span>
@@ -255,11 +256,12 @@
       <!-- Add to Cart Button -->
     </div>
     <div class="cart md-cart bg-white ">
-        <button class="cart1 md-cart1 border rounded fs-6 fw-bold circularAirPro" style="background-color: #E1BBB4; color: #000;">
+        <button class="cart1 md-cart1 border rounded fs-6 fw-bold circularAirPro hover-bg-light" style="background-color: #E1BBB4; color: #000;">
           Add to cart
         </button>
     </div>
-    <div style="height: 8px;" class="bg-pink-200 md-my-30"></div>
+    <div class="md-d-none m-div justify-content-center align-items-end"><div class="m-div1 bg-black border rounded"></div></div>
+    <div style="height: 8px;" class="bg-pink-200 md-my-30 xs-my-25"></div>
     <!--section-3  -->
     <div class="bg-white xs-p-3 md-p-0">
         <div>
@@ -283,10 +285,10 @@
     </div>    
   </div>
 
-  <div style="height: 8px;" class="container1 bg-pink-200 md-mx-65 md-my-30"></div>
+  <div style="height: 8px;" class="container1 bg-pink-200 md-mx-65 md-my-30 xs-my-25"></div>
     
     <!-- section-4 -->
-    <div class="bg-white md-mx-65 xs-p-3 md-p-0">
+    <div class="bg-white md-mx-65 xs-p-3  md-p-0">
         <h3 class="fw-bold fs-sm-6 md-fs-18 circularAirPro">Treatment Reviews</h3>
         <div>
           <div class="">
@@ -596,13 +598,13 @@
           <div>
             <h4 class="fw-bold fs-5 circularAirPro">Join our flexible working revolution.</h4>
             <p style="padding-bottom: 30px; padding-top: 10px;" class="grey1 adobe fs-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.m.</p>
-            <button class="button3 border fw-bold  circularAirPro" >Apply via email</button>
+            <button class="cart1 button3 border fw-bold  circularAirPro" >Apply via email</button>
           </div>
           <div class="xl-mt-3">
             <h4 class="fw-bold fs-5 circularAirPro ">Get in touch</h4>
             <p style="padding-bottom: 30px; padding-top: 10px;" class="grey1 adobe fs-18">At-home beauty and wellness services</p>
             <div class="d-flex gap-3 extra">
-              <button class="button5 border fw-bold md-fs-16 circularAirPro" >Contact us</button>
+              <button class="cart1 button5 border fw-bold md-fs-16 circularAirPro" >Contact us</button>
               <button class="button4 fw-bold md-fs-16 circularAirPro" ><img src="./public/icons8-whatsapp 1.png" alt="whatsapp" title="whatsapp"> +34 638 11 53 14</button>
             </div>
           </div>
