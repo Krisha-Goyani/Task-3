@@ -46,6 +46,12 @@ ul{
     padding: 51px 65px 36px 65px;
     /* background-color: #974c4c; */
 }
+.logo-img{
+    max-width: 226px;
+    width: 100%;
+    max-height: 22px;
+    height: 22px;
+}
 .logo2{
     max-width: 1137px;
     width: 100%;
@@ -54,7 +60,7 @@ ul{
     /* overflow: hidden; */
     /* text-overflow: ellipsis; */
 }
-.logo2 p{
+.logo2, .logo3 p{
     white-space: nowrap; 
           overflow: hidden;
           text-overflow: ellipsis; 
@@ -101,6 +107,9 @@ a{
     justify-content: center;
     align-items: center;
     align-self: anchor-center;
+}
+.icon:hover{
+    background-color: #e4d7d5;;
 }
 .nav-icon {
     width: 24px;
@@ -153,6 +162,9 @@ body {
   .custom-radio1 input[type="checkbox"] {
     display: none;
   }
+  .custom-radio2 input[type="radio"] {
+    display: none;
+  }
 
   /* Create a custom circle */
   .custom-radio  label {
@@ -169,8 +181,26 @@ body {
     display: inline-block;
     line-height: 20px;
   }
+  .custom-radio2 label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    display: inline-block;
+    line-height: 20px;
+  }
 
   .custom-radio label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--grey-secondary); /* Custom border color */
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .custom-radio2 label::before {
     content: '';
     position: absolute;
     left: 0;
@@ -195,6 +225,9 @@ body {
 
   /* Checked state: fill the circle with pink */
   .custom-radio input[type="radio"]:checked + label::before {
+    background-color: #fff; /* Pink fill color */
+  }
+  .custom-radio2 input[type="radio"]:checked + label::before {
     background-color: #fff; /* Pink fill color */
   }
   .custom-radio1 input[type="checkbox"]:checked + label::before {
@@ -222,6 +255,16 @@ body {
     background-color: var(--pink-primary); /* Slightly darker pink for the dot */
     border-radius: 50%;
   }
+  .custom-radio2 input[type="radio"]:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    width: 12px;
+    height: 12px;
+    background-color: var(--pink-primary); /* Slightly darker pink for the dot */
+    border-radius: 50%;
+  }
   .custom-radio1 input[type="checkbox"]:checked + label::after {
     content: '✔'; /* Unicode for tick */
     position: absolute;
@@ -238,7 +281,7 @@ body {
 
   .image-container {
     position: relative;
-    max-width: 992px; /* Restrict container width */
+    max-width: 768px; /* Restrict container width */
 }
 .image-container img {
     /* max-width: 992px;
@@ -246,7 +289,7 @@ body {
     width: 100%;
     height: auto; */
     width: 100%;
-    max-width: 992px; /* Restrict image width */
+    max-width: 768px; /* Restrict image width */
     max-height: 232px; /* Restrict image height */
     object-fit: cover; 
 }
@@ -278,10 +321,6 @@ body {
     display: flex;
     gap: 6px;
 }
-.icons i {
-    font-size: 14px;
-    color: #6c757d;
-}
 .progress-bar1 {
     position: absolute;
     bottom: 10px;
@@ -302,6 +341,10 @@ body {
 .wrapper img{
     /* max-width: 635px;
     width: 100%; */
+}
+.thumb{
+    height: 12.7px;
+    width: 14.26px;
 }
 @media (min-width: 360px) {
     
@@ -342,6 +385,9 @@ body {
         width: 291px;
         height: 180px;
      }
+    .pb-3px{
+        padding-bottom: 7px;
+    } 
 }
 .cart1:hover {
     background-color: var(--pink-ternary) !important; /* Background turns white */
@@ -379,12 +425,20 @@ body {
 }
 /* Ratings */
 @media (min-width: 768px){
+    .main-nail{
+        /* max-width: 299px;
+        max-height: 290px;
+        width: 100%;
+        height: 100%; */
+    }
     .nail{
-        width: 216px;
+        width: 299px;
      }
     .nail-img{
-        width: 299px;
-        height: 185px;
+        max-width: 299px;
+        max-height: 185px;
+        width: 100%;
+        height: 100%;
      }
     .md-cart{
         max-width: 400px;
@@ -475,6 +529,9 @@ body {
     .md-d-none{
         display: none;
     }
+    .md-gap-8{
+        gap: 8px;
+    }
 }
 @media (min-width: 768px) and (max-width:992px){
     .container-img{
@@ -507,7 +564,7 @@ body {
         width: 100%;
         height: 394px;
         display: flex;
-        /* animation: slide 10s infinite; */
+        animation: slide 10s infinite;
     }
     @keyframes slide{
         0%{
@@ -607,7 +664,7 @@ body {
         /* box-shadow: 10px 25px 30px rgba(30,30,200,0.3); */
     }
     .wrapper{
-        max-width: 635px;
+        max-width: 500px;
         width: 100%;
         height: 394px;
         display: flex;
@@ -646,7 +703,7 @@ body {
         /* animation: slide 10s infinite; */
     }  
     .image{
-        max-width: 635px;
+        max-width: 500px;
         width: 100%;
         max-height: 394px;
         height: 100%;
@@ -667,17 +724,43 @@ body {
 }
 
 @media (min-width: 1280px){
-    .main-img{
+    .container-img{
         max-width: 635px;
         width: 100%;
-        max-height: 395px;
-        height: 100%;
+        height: 394px;
+        overflow: hidden;
     }
-    .main-img-1{
+    .container-img-1{
+        width: 635px;
+        height: 87px;
+        overflow: hidden;
+    }
+    .wrapper{
         max-width: 635px;
+        width: 100%;
+        height: 394px;
+        display: flex;
+        animation: slide 10s infinite;
+    }
+    .wrapper-1{
+        width: 100%;
+        height: 87px;
+        display: flex;
+        /* animation: slide 10s infinite; */
+    }  
+    .image{
+        max-width: 635px;
+        width: 100%;
+        max-height: 394px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .image1{
+        max-width: 140px;
         width: 100%;
         max-height: 87px;
         height: 100%;
+        object-fit: cover;
     }
     .review3{
         display: flex;
@@ -695,7 +778,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: conic-gradient(#333 0% 75%, #e0e0e0 75% 100%);
+    background: conic-gradient(#333 0% 80%, #e0e0e0 80% 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -740,21 +823,28 @@ body {
        transition: var(--bs-progress-bar-transition);
  } 
  .button{
-    background-color: black;
-    width: 45px;
+    background-color: rgb(39, 39, 39);
+    width: 38px;
     height: 17px;
     color: white;
     border: 1px solid black;
+    border-radius: 3px;
     /* text-align: center; */
+    /* padding: 2px 0; */
  }
-
+.star1{
+    width: 12px;
+    height: 12px;
+    align-self: center;
+    /* border: 1px solid black; */
+}
  /* services */
 
  
  .button1{
     background-color: white;
-    width: 91px;
-    height: 36px;
+    width: 80px;
+    height: 31px;
     color: black;
     border-radius: 7px;
     border: 1px solid;
@@ -806,4 +896,18 @@ body {
     border-radius: 7px;
     border: 1px solid black;
     /* background: var(--pink-primary); */
+}
+.wp-img{
+    width: 15px;
+    height: 15px;
+}
+.card-img{
+    max-width: 56px;
+    max-height: 35px;
+    width: 100%;
+    height: 100%;
+}
+.s-media{
+    width: 18px;
+    height: 18px;
 }
